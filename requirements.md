@@ -1,0 +1,4 @@
+- python
+- pip
+- django
+- virtualenv
