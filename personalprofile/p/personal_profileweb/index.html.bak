@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<link href="stylesheet.css" rel="stylesheet" type="text/css">
+</head>
+
+<header>
+  <h2>MY PERSONAL PROFILE</h2>
+</header>
+<body style="height: 1289px">
+<section>
+  <nav style="width: 20%; height: 368px">
+  <img src="assets/images/i.jpg" alt="I" height="342" width="264" >
+  </nav>
+      <article> 
+        <h3> SUMMARY: </h3> <hr> 
+        An aspiring computer engineer interested in hardware development, evaluating computer-related impacts to societies and expanding technology benefits to better environments. Currently, a second-year student pursuing a bachelor's degree in computer science at ALU.
+      </article>
+      <article>
+        <h3> EDUCATIONAL BACKGROUND: </h3> <hr>
+          <h4> <div class="titles"> African Leadership University Kigali, Rwanda<span lang="en-gb">
+			  </span>(Jan 2021 â€“ Present) </div> </h4>
+            <div class="a"> 
+			  Computer Science <br>
+			</div>
+            <div class="a">
+			  <i> Relevant Coursework: Database Management, Python & Java Programming, Computer Architecture, Web Development </i> 
+			</div>
+        <h3> PROFESSIONAL WORK EXPERIENCE: </h3> <hr>
+          <h4> <div class="titles"> Head of Project Documentation (Aug 2018 - Jun 2019) </div> </h4>
+            <div class="a"> 
+			  SPECTRUM Project, SOS HGIC â€“ Tema, Ghana <br>
+			    </div>
+            <div class="a">
+			  <i> Headed the video-photography team of a SPECTRUM dubbed project focused on SDG-3: Good-Health and Well-Being to raise funds to purchase incubators to support the Neonatal Intensive Care Unit of Tema General Hospital. </i> 
+			</div> 
+          <h4> <div class="titles"> Leadership and Engineering projects (Aug 2018 â€“ Aug 2018) </div> </h4>
+            <div class="a"> ASHESI UNIVERSITY â€“ Ghana  <br></div>
+            <div class="a"> 
+              I  practiced my leadership skills as a future leader and in the engineering focus, used them to develop the best fitting solutions to problems facing Africa and developed a smart house model with an advanced automatic system for controlling remote features to contribute to home security while preserving the environment. 
+			</div> 
+          <h4> <div class="titles"> Djing and Sound Management  (Feb 2020 - Aug 2020) </div ></h4>
+            <div class="a"> SOS HGIC â€“ Tema, Ghana <br></div>
+            <div class="a">
+			  <i> Held the role of the entertainment prefect and was in charge of all sound and video systems at school. I managed, assembled and operated the sound systems on different occasions such as choir rehearsals, gatherings. </i> 
+			</div> 
+            <div class="a"> ALU â€“ Kigali, Rwanda<br></div>
+            <div class="a">
+			  <i> I was responsible for assembling, operating and maintaining the technical equipment used to amplify, enhance and mix for various shows and events held by ALU at the Mirror Hotel, and some at Mostar Hotel. </i> 
+			</div> 
+        <h3> EXTRACURRICULAR ACTIVITIES: </h3> <hr>
+          <h4> <div class="titles"> Mental Health Awareness, SOS CV Rwanda(Feb 2020 - Aug 2020) </div></h4>
+            <div class="a"> 
+			  Gained knowledge on the various mental illnesses and practiced the most important first aids towards mental health, maintaining mental health, and helping those with mental illness. From these experiences, I have learnt how to take care of emergent panic attacks and help people with mental problems before seeking further help. 
+			</div> 
+          <h4> <div class="titles"> Zonta and Mogul Clubs, SOS HGIC (Aug 2017 â€“ Jun 2020) </div> </h4>
+            <div class="a">
+			  In the different projects meant for the community such as building houses for the poor women and facilitating sanitation in the neighboring schools, I worked in documentation and executing fundraising projects.
+			</div>
+          <h4> <div class="titles"> Chess Club Secretary, SOS HGIC (Aug 2018 â€“ Jun 2019)<div> </h4>
+            <div class="a"> 
+			  I worked very hard to organize and schedule meetings and encourage students to join the club 
+			</div> 
+          <h4> <div class="titles"> Public Relations Officer, Photography club (SOS HGIC Aug 2018 â€“ Jun 2019)</div> </h4>
+            <div class="a"> 
+			  I worked hard to build a positive relationship between the club and students by initiating different activities, such as the Picture of the Month challenge, to encourage students to join the club while documenting school events and equipping interested individuals with photography lessons and skills. 
+			</div> 
+          <h4> <div class="titles"> DRAMA CAS, SOS HGIC Aug (2018 â€“ Jun 2019) </div> </h4>
+            <div class="a"> 
+			  Acted as the lead character in the school play, which was very complicated and tough. The 4 months of preparation included many rehearsals, which I had to balance with my academics. Being part of the process and the presentation did not only boost my confidence level and public speaking but my love for creative writing. 
+			</div>  
+        <h3> SKILLS </h3> <hr>
+          <ul> 
+            <li>Data Analytics </li> <li>(Databases: SPSS, MySQL) </li>
+            <li>Auditory skills and presentation skills </li> <li>Sustainability skills</li>
+			<li> Photography </li>
+			<img src="assets/images/photography.PNG" alt="Taking photos at an event" height="300">
+          </ul>
+        <h3> INTERESTS: </h3> <hr>
+        <ul> 
+		  <li>Sciences and Robotics </li> 	
+          <li>Computer Networks </li> 
+          <li>Hardware development </li> 
+          <li>Sustainability practices  </li> 
+          <li>Women Empowerment</li>
+		  <li>Sports  </li> 
+        </ul>
+        <h3> LANGUAGES: </h3> <hr>
+          <table>
+            <tr>  <td> <b> Language </b> </td> <td> <b>Proficiency </b> </td>  </tr>
+            <tr>  <td>       Kinyarwanda </td> <td> Native              </td> </tr>
+            <tr>  <td>       English     </td> <td> Expert              </td>  </tr>
+            <tr>  <td>       French      </td> <td> Intermediate        </td> </tr>
+            <tr>  <td>       Swahili     </td> <td> Beginner            </td> </tr>
+          </table>     
+      </article>
+
+  
+</section>
+</body>
+<footer class="auto-style1">
+    <i> <p><br>Author: Sylvie MUTUYIMANA</p>
+      <p>date: 14th February 2022</p> </i>
+</footer> 
+</html>
+
