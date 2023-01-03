@@ -1,0 +1,57 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/recent-stories.css' %}" >
+<link rel="stylesheet" href="{% static 'css/body.css' %}" >
+<style>
+    .myworks{background-color: rgb(97, 150, 144)}
+    .myworks .heading{grid-column: 1 / -1; text-align: center;}
+    .myworks .layout{background-color:  rgba(253, 253, 253, 0.219);display: grid;height: 620px;grid-template-rows: 3cm;width: 70%;
+	    margin: auto;grid-template-columns: repeat(2, 1fr);gap: 5%;align-items: center;text-align: center; }
+    .myworks .work{position: relative;margin:auto; top:20%; width: 80%; height: auto; background-color: rgba(253, 253, 253, 0.41);}
+    .myworks .work.left, .myworks .work.right {text-decoration: none;}
+    .myworks .work.onlyrow{grid-column: 1 / -1; width:40%;}
+    .myworks img{z-index: 1;width:300px; height: 200px;margin-top: 5%;margin-bottom:5%}
+    .myworks .work_text{width: 150px;height: 190px;opacity: 0.9;position: absolute; margin: auto;top: 5%;
+        left:5%;background: rgba(255, 255, 255, 0.824);z-index: 2; float: left;}
+    .myworks .work a{color: #005e45;font-style: italic;}
+    @media (max-width: 900px){
+        .myworks .work,.myworks .work.onlyrow {grid-column: 1 / -1;width:80%;  top:0%;}
+        .myworks .work.onlyrow {top:0%;} 
+        .myworks .layout{height: 600px;grid-template-rows: 5cm;grid-template-columns: repeat(1, 1fr);top: 0%}
+        .myworks .work .right{top:0%}
+        .myworks img{z-index: 1;width:200px; height: 150px;margin-top: 5%;margin-bottom:5%}
+}
+</style>
+<section class="myworks">
+    <article> 
+        <div > 
+            <br><br>
+            <h2 class="section_heading" >Recent stories</h2>
+        </div>
+        <br><br>
+        <section class="layout">       
+            <div class="work left" >
+                <img src="{% static 'images/background.JPG' %}">
+                <div class="work_text"> 
+                    <p>Ibikeri byifashishwa mu kwiga imiterere y'ibishanga <br> <br>
+                    <strong>IBIKERI N'IBISHANGA</strong><br>
+                    <a href="#Story"> Read More</a></p>
+                </div>
+            </div>
+            <div class="work right">
+                <img src="{% static 'images/background.JPG' %}">
+                <div class="work_text"> 
+                    <p>Hatangijwe uburyo bwo kubika amakuru y’ibinyabuzima hifashishijwe ikoranabuhanga<br><br>
+                    <a href="#Story"> Read More</a></p>
+                </div>
+            </div>
+            <div class="work onlyrow ">
+                <img src="{% static 'images/background.JPG' %}">
+                <div class="work_text" > 
+                    <p>Developing a freshwater biodiversity information system ...<br><br>
+                    <strong>A JRS biodiversity story </strong><br><br>
+                    <a href="#Story"> Read More</a></p>
+                </div>
+            </div>
+        </section>
+    </article>
+</section>

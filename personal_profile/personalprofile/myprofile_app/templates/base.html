@@ -1,0 +1,32 @@
+{% load static %}
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size: 13px;}
+        .sidenav {height: 100%;width: 25%;position: fixed;z-index: 1;top: 0;
+            left: 0;background-color: #111;overflow-x: hidden;padding-top: 2%;}
+        .topnav {overflow: hidden;background-color: rgb(161, 110, 80); height:90px;}
+        .main {margin-left:24.5%; margin-top: -10px;margin-right: -10px;}
+        .main_body{width: 100%;margin-top: -20px;height: 100%}
+        @media screen and (max-width: 1000px) {.sidenav{width: 28%;}.main{margin-left:27.5%;}}
+        @media screen and (max-width: 800px) {.sidenav{width: 30%;}.main{margin-left:29.5%;}}
+        @media screen and (max-width: 600px) {.sidenav{width: 36%;}.main{margin-left:35.5%;}}
+    </style>
+</head>
+<body>
+    <div class="sidenav">
+        {% include 'navigation/side_nav.html' %}
+    </div>
+    <div class="main">
+        <nav class="topnav" id="myTopnav">
+            {% include 'navigation/top_nav.html' %}
+        </nav> 
+        <div class="main_body">
+            {% block content %}
+
+
+            {% endblock content %}
+        </div>
+    </div>
+</body>
