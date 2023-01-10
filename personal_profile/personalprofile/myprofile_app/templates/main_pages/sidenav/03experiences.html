@@ -1,0 +1,97 @@
+<!--THE MAIN HOMEPAGE-->
+
+{% extends "base.html" %}
+{% block content %}
+    {% load static %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'css/mainpages/topnav/02extra_curricular.css' %}" >
+    <style>
+        .experiences_page{background:url("static/images/extracurricular/abstract_background.jpg"); background-position: top;
+            background-repeat: no-repeat; background-size: 100% auto;background-attachment: fixed; }
+        .experiences_page .the_experiences{width: 95%;margin-left: 2.5%;}
+        .experiences_page .the_experiences .all_experiences{background-color:rgb(240,255,255,0.8);}
+        .experiences_page .the_experiences .all_experiences .each_experience{padding: 5px;}
+        .experiences_page .collapsible{background-color:rgb(119,119,119,0.5);color:white;cursor:pointer;
+            padding:18px;width: 100%;border:none;text-align:left;outline:none;font-size:15px;}
+        .experiences_page .active, .experiences_page .collapsible:hover {background-color:rgb(139,136,136,0.6);}
+        .experiences_page .content{padding:0 18px;display:none;overflow:hidden;background-color:#f1f1f1;}
+    </style>
+    <div class="experiences_page">
+        <div class="the_experiences">
+            <h2>Experiences</h2>
+            <div class="all_experiences">
+                <h2>Internships</h2>
+                <div class="each_experience">
+                    <button type="button" class="collapsible">Open Section 1 <i class="fa fa-angle-down"></i> </button>
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+                <div class="each_experience">
+                    <button type="button" class="collapsible">Open Section 2 <i class="fa fa-angle-down"></i> </button>
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+                <div class="each_experience">
+                    <button type="button" class="collapsible">Open Section 3 <i class="fa fa-angle-down"></i> </button>
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="all_experiences">
+                <h2>Work</h2>
+                <div class="each_experience">
+                    <button type="button" class="collapsible">Open Section 1 <i class="fa fa-angle-down"></i> </button>
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+                <div class="each_experience">
+                    <button type="button" class="collapsible">Open Section 2 <i class="fa fa-angle-down"></i> </button>
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+                <div class="each_experience">
+                    <button type="button" class="collapsible">Open Section 3 <i class="fa fa-angle-down"></i> </button>
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="all_experiences">
+                <h2>Workshops/Training</h2>
+                <div class="each_experience">
+                    <button type="button" class="collapsible">Open Section 1 <i class="fa fa-angle-down"></i> </button>
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+                <div class="each_experience">
+                    <button type="button" class="collapsible">Open Section 2 <i class="fa fa-angle-down"></i> </button>
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+                <div class="each_experience">
+                    <button type="button" class="collapsible">Open Section 3 <i class="fa fa-angle-down"></i> </button>
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");var i;
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {content.style.display = "none";} 
+                else {content.style.display = "block";}});}
+    </script>
+{% endblock content %}

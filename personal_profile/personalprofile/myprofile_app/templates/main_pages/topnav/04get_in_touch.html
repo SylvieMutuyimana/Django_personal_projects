@@ -1,0 +1,37 @@
+<!--THE MAIN HOMEPAGE-->
+
+{% extends "base.html" %}
+{% block content %}
+    {% load static %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'css/mainpages/topnav/02extra_curricular.css' %}" >
+    <style>
+        .page{background:url("static/images/extracurricular/abstract_background.jpg"); background-position: top;
+            background-repeat: no-repeat; background-size: 100% auto;background-attachment: fixed; }
+        .page .contact_page{width: 90%; margin-left: 5%;}
+        .page .contact_page input[type=text],.page .contact_page select, .page .contact_page textarea{
+            width:100%;padding:12px;border:1px solid#ccc;border-radius: 4px;
+            box-sizing: border-box;margin-top: 6px;margin-bottom: 16px;resize: vertical;}
+        .page .contact_page input[type=submit] {background-color: #04AA6D;color: white;
+            padding:12px 20px;border:none;border-radius:4px;cursor:pointer;}
+        .page .contact_page input[type=submit]:hover {background-color: #45a049;}
+        .page .contact_page .container {border-radius: 5px;background-color:#f2f2f2;padding: 20px;}
+    </style>
+    <div class="page">
+        <div class="contact_page" >
+            <h3>GET IN TOUCH</h3>
+            <div class="container">
+                <form action="/action_page.php">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name...">  
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="Your email...">        
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write your message.." style="height:200px"></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock content %}
