@@ -14,7 +14,7 @@ def experiences(request):
     context = {}
     return render(request, "main_pages/sidenav/03experiences.html", context)
 
-def contacts(request):
+def contact(request):
     context = {}
     return render(request, "main_pages/sidenav/04contact.html", context)
 

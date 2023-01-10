@@ -16,8 +16,8 @@ def personal_statement(request):
     return render(request, "main_pages/topnav/03personal_statement.html", context)
 
 
-def contact(request):
+def get_in_touch(request):
     context = {}
-    return render(request, "main_pages/topnav/04contact.html", context)
+    return render(request, "main_pages/topnav/04get_in_touch.html", context)
 
 

@@ -8,7 +8,7 @@
             left: 0;background-color: #111;overflow-x: hidden;padding-top: 2%;}
         .topnav {overflow: hidden;background-color: rgb(161, 110, 80); height:90px;}
         .main {margin-left:24.5%; margin-top: -10px;margin-right: -10px;}
-        .main_body{width: 100%;margin-top: -20px;height: 100%}
+        .main_body{width: 100%;margin-top: -20px}
         @media screen and (max-width: 1000px) {.sidenav{width: 28%;}.main{margin-left:27.5%;}}
         @media screen and (max-width: 800px) {.sidenav{width: 30%;}.main{margin-left:29.5%;}}
         @media screen and (max-width: 600px) {.sidenav{width: 36%;}.main{margin-left:35.5%;}}
@@ -29,4 +29,7 @@
             {% endblock content %}
         </div>
     </div>
+    <footer>
+        {% include 'footer/footer.html' %}
+    </footer>
 </body>

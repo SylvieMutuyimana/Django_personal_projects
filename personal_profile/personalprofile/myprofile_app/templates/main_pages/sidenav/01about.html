@@ -3,8 +3,87 @@
 {% extends "base.html" %}
 {% block content %}
     {% load static %}
-    <div >
-        SIDE NAV <br>
-        ABOUT
+    <style>
+        .div1{height: 500px;background:url("static/images/extracurricular/photography/me.jpg"); background-position: top;
+            background-repeat: no-repeat; background-size: 100% auto;background-attachment: fixed;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-size: 15px;
+        }
+        .div1 .layout{position: relative;width: 100%;height:43%; top:57%}
+        .div1 .layout .left,.div1 .layout .right{text-align: center;height: 100%;}
+        .div1 .layout .left{background-color:rgb(144, 238, 144,0.15);width: 50%;float:left}
+        .div1 .layout .right{background-color:rgb(255, 255, 224, 0.15);width: 50%;float:right;}
+        .div1 .layout .heading{font-size:x-large;font-style: italic;}
+        .div1 .layout .heading p{font-size:medium; margin-top: -1px;}
+        .div2{height:300px;background-color: bisque;}
+        .div2 .heading{text-align: center;}
+        .div2 .heading hr{width: 30%;}
+        .div2 .layout{background-color:rgb(255, 165, 0, 0.5);display: grid;height:80%;grid-template-rows: 2cm;width: 90%;
+	        margin-left:5%;grid-template-columns: repeat(3, 1fr);text-align: center;}
+        .div2 .work{position: relative;margin:auto; top:20%; width: 94%; height: auto; background-color:rgb(138, 43, 226,0.5)}
+        .div2 img{z-index: 1;width:220px; height: 150px;margin-top: 5%;margin-bottom:5%}
+        .div2 .work_text{width: 95%;height: 60%;opacity: 0.9;position: absolute; margin: auto;top: 65%;
+            left:2.5%;background:rgba(194, 194, 4, 0.8);z-index: 2}
+        .div2 .work a{color:navy; font-weight: bold;}
+        @media screen and (max-width: 1000px) {
+            .div1{height: 400px;} .div2{height:550px;}
+            .div2 .layout{grid-template-columns: repeat(2, 1fr)}
+            .div2 .work.right{margin-left: 60%;margin-top: 60px;}
+        }
+        @media screen and (max-width: 800px) {
+            .div1{height: 300px;} .div2{height:900px;}
+            .div2 .layout{grid-template-columns: repeat(1, 1fr) }
+            .div2 .work.middle{margin-top: 55px}
+            .div2 .work.right{margin-left: 5%;margin-top: -90px;}
+            .div1 .layout{height:53%; top:47%}
+        }
+        @media screen and (max-width: 600px) {.div1{height: 200px;}.div2{height:800px}
+            .div2 .layout{grid-template-columns: repeat(1, 1fr)}
+            .div2 .work.middle{margin-top: 55px} .div2 .work.right{margin-top: -50px;}
+            .div1 .layout{height:100%; top:0%}
+        }
+    </style>
+    <div class="div1">
+        <div class="layout">
+            <div class="left">
+                <div class="heading"><br><strong>Designer</strong><p>******</p></div>
+                <div>
+                    Web and App Designer<br>Languages: JavaScript, React, CSS<br>
+                    <p><i>Figma: <a href="#Figma">Sylvie Mutuyimana</a></i></p>
+                </div>
+            </div>
+            <div class="right">
+                <div class="heading"><br><strong>Coder</strong><p>******</p></div>
+                <div>
+                    Full Stack Developer<br>Languages: Django, Node<br>
+                    <p><i>Github: <a href="#Github">Sylvie Mutuyimana</a></i></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="div2">
+        <div class="heading"><br>ABOUT ME<hr></div>
+        <section class="layout">       
+            <div class="work left" >
+                <img src="{% static 'images/homepage/taxi_app.png' %}">
+                <div class="work_text"> 
+                    <p>An app to help passengers access rides <br> <br>
+                    <a href="#Story">Read More --></a><br>
+                </div>
+            </div>
+            <div class="work middle">
+                <img src="{% static 'images/background.JPG' %}">
+                <div class="work_text"> 
+                    <p>Hatangijwe uburyo bwo kubika amakuru<br><br>
+                    <a href="#Story"> Read More</a></p>
+                </div>
+            </div>
+            <div class="work right">
+                <img src="{% static 'images/background.JPG' %}">
+                <div class="work_text" > 
+                    <p>Developing a freshwater biodiversity information ...<br><br>
+                    <a href="#Story"> Read More</a></p>
+                </div>
+            </div>
+        </section>
     </div>
 {% endblock content %}

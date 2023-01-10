@@ -3,8 +3,80 @@
 {% extends "base.html" %}
 {% block content %}
     {% load static %}
-    <div >
-        TOP NAV <br>
-        EXTRA CURRICULAR
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'css/mainpages/topnav/02extra_curricular.css' %}" >
+    <style>
+        .page{background:url("static/images/extracurricular/abstract_background.jpg"); background-position: top;
+            background-repeat: no-repeat; background-size: 100% auto;background-attachment: fixed; }
+    </style>
+    <div class="page">
+        <div class="row">
+            <div class="column" style="background-color:rgb(170, 170, 170, 0.5);">
+                <h2>Photography</h2><p>Some text..</p><br><br><br>
+                <div>
+                    <button type="button" class="expandable_activity">
+                        <i class="fa fa-angle-down"></i>
+                    </button>
+                    <div class="activity_content _1">
+                        <div class="activity">
+                            <h2>PHOTOGRAPHY</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column" style="background-color:rgb(187, 187, 187,0.5);">
+                <h2>Spoken word</h2><p>Some text..</p><br><br><br>
+                <div>
+                    <button type="button" class="expandable_activity">
+                        <i class="fa fa-angle-down"></i>
+                    </button>
+                    <div class="activity_content _2">
+                        <div class="activity">
+                            <h2>SPOKEN WORD</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column" style="background-color:rgb(204, 204, 204, 0.5);">
+                <h2>Chess</h2><p>Some text..</p><br><br><br>
+                <div>
+                    <button type="button" class="expandable_activity">
+                        <i class="fa fa-angle-down"></i>
+                    </button>
+                    <div class="activity_content _3">
+                        <div class="activity">
+                            <h2>CHESS</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column" style="background-color:rgb(221, 221, 221, 0.5);">
+                <h2>Column 4</h2><p>Some text..</p><br><br><br>
+                <div>
+                    <button type="button" class="expandable_activity">
+                        <i class="fa fa-angle-down"></i>
+                    </button>
+                    <div class="activity_content _4">
+                        <div class="activity">
+                            <h2>This text</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="activity_area">
+
+        </div>
+        <script>
+            var coll = document.getElementsByClassName("expandable_activity");var i;
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function() {
+                    this.classList.toggle("active_activity");var content = this.nextElementSibling;
+                    if (content.style.display === "block") {content.style.display = "none";}
+                    else{content.style.display = "block";
+                }});}
+        </script>
     </div>
+
 {% endblock content %}
